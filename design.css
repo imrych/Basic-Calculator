@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #146C94;
+    background-image:url(Pic/4065788.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .cal {
+    align-items: center;
+    margin-top: 30px;
+    background: rgb(211, 246, 251);
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px -5px rgb(0, 191, 255);
+  }
+  .cal_display {
+    background: black;
+    color: #19A7CE;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+  }
+  .cal_display h1 {
+    margin: 0;
+    padding: 30px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    overflow-x: auto;
+  }
+  
+  .cal_button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .equal-sign {
+    color: white;
+    grid-column: -2;
+    grid-row: 2 / span 4;
+  }
+  button {
+    min-height: 50px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(125, 157, 194);
+  }
+  button:hover {
+    filter: brightness(110%);
+  }
+  button:active {
+    transform: translateY(2px);
+  }
+  button:focus {
+    outline: none;
+  }
+  .operator {
+    background: rgb(62, 120, 186);
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .clear {
+    background-color: rgb(215, 19, 19);
+    color: white;
+    font-weight: bolder;
+  }
